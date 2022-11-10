@@ -24,18 +24,22 @@ cursor
 df = pd.read_sql_query('select * from sucesos limit 5',con=conn)
 wb = pd.read_sql_query('select * from worldbank limit 5',con=conn)
 wb = wb.set_index('index')
-
-
+df_temp = df.iloc[df['total_fallecidos'].idxmax()]
+df_temp = pd.DataFrame(df_temp)
 
 
 st.title('Dashboard MayDay - SoyHenry!!')
+
+col1, col2, = st.columns(2)
+col1.metric("Pais con mayor accidente", "Brazil")
+col2.metric("Maxima cantidad de accidente en una ciudad", "189")
 
 #### Graficamos dos plots
 st.markdown('Fallecidos y sobrevientes por año') # see *
 image = Image.open('Charts/cantidad de fallecidos.png')
 st.image(image)
 
-st.markdown('Rperesentación de accidentes por despegue y aterrizaje, distribuido por ciudades') # see *
+st.markdown('Accidentes por despegue y aterrizaje, distribuido por ciudades') # see *
 chart1, chart2, = st.columns(2)
 with chart1:
     image = Image.open('Charts/accidene despegue.png')
