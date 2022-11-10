@@ -9,7 +9,7 @@
 
 
 * Python
-* SQL
+* SQLite
 * Streamlit
 * Github
 
@@ -39,5 +39,8 @@ Análisis exploratorio de datos de accidentes aéreos, investigando las razones 
 # Contenido del Repo
 
 * **Dataset**: AccidentesAviones.csv
-* **Notebook**: PI Analytics.ipynb
+* **Dataset**: API_IS.AIR.PSGR_DS2_en_csv_v2_673046.csv
+* **Notebook python**: PI Analytics.ipynb
 * **Database**: accidentes.db
+* **Script Python**: dashboard.py
+* 
