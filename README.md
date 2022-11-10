@@ -40,6 +40,7 @@ Análisis exploratorio de datos de accidentes aéreos, investigando las razones 
 
 * **Dataset**: AccidentesAviones.csv
 * **Dataset**: API_IS.AIR.PSGR_DS2_en_csv_v2_673046.csv
+* **Dataset**: df_accidentes.csv ------> Set de datos 
 * **Notebook python**: PI Analytics.ipynb
 * **Database**: accidentes.db
 * **Script Python**: dashboard.py
